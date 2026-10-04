@@ -1,0 +1,39 @@
+# Comoloc
+
+> Comoloc is a localization studio founded in 2015 that combines AI with experienced linguists to deliver cost-efficient, scalable localization for technology, software, e-commerce and gaming companies.
+
+- Website: https://comoloc.co/
+- Founded: 2015
+- Team: 5+ linguists and localization specialists, 10+ years of experience
+- Current language pair: English to Turkish. More target languages are planned.
+- Industries: technology, software, e-commerce, gaming
+- Contact: contact@comoloc.co
+- LinkedIn: https://www.linkedin.com/company/comoloc
+
+## AI-powered localization
+
+Comoloc builds AI into the localization process where it adds value and keeps experienced linguists responsible for the final result, for cost-efficient and scalable localization.
+
+- AI Translation with Human Review: LLMs and machine translation produce a fast first draft. Our linguists edit, adapt and sign off on every string.
+- AI-Assisted Quality Checks: Automated checks flag errors, terminology drift and inconsistencies, and pre-score content with MQM before human LQA.
+- AI Workflow Setup: Custom prompts, glossary and style guide integration, engine selection and automation, built around your content and tools.
+- AI Terminology & Style Guides: We extract key terms from your existing content and draft style guides that keep both AI and linguists on-brand.
+
+## Services
+
+- Translation: Accurate, natural translation for product, marketing and support content.
+- Software, App & Web Localization: UI strings, help centers and websites adapted for each market, with placeholders, plurals and length limits handled.
+- Game Localization: In-game text, UI, store pages and patch notes that keep tone, humor and character voice intact.
+- LQA & MQM Evaluation: Structured quality reviews using the MQM error typology, with scorecards your team can act on.
+- Machine Translation Post-Editing: Light or full post-editing of machine and AI output, matched to your quality bar, timeline and budget.
+- Transcreation: Slogans, campaigns and app store copy recreated for local audiences, not translated word for word.
+- Subtitling: Timed, readable subtitles for product videos, trailers and tutorials.
+- Terminology Management: Glossaries and termbases that keep your product language consistent across every release.
+- Localization Process Design: Workflows, tooling, AI integration and QA steps set up so localization scales with your product.
+- Crowdsourcing Management: Recruiting, guiding and quality-checking community translators for large or community-driven projects.
+
+## Blog
+
+- [AI + Human Localization: How to Get Speed Without Losing Quality](https://comoloc.co/blog/ai-human-localization.html): How to combine AI translation with expert linguists for faster, more cost-efficient localization without sacrificing quality. A practical, step-by-step workflow.
+- [MQM Explained: How to Measure Translation Quality Objectively](https://comoloc.co/blog/mqm-translation-quality.html): A practical introduction to MQM (Multidimensional Quality Metrics): error categories, severity levels, scoring and how to use it to evaluate human, machine and AI translation.
+- [Localizing Games into Turkish: 7 Pitfalls to Avoid](https://comoloc.co/blog/game-localization-turkish.html): Seven common pitfalls when localizing games into Turkish, from suffixes and string variables to the Turkish I problem, fonts, UI space, plurals, number formats and tone.

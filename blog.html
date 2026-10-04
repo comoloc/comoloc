@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Comoloc | AI-Powered Localization for Software, Games &amp; E-commerce</title>
-<meta name="description" content="Comoloc combines AI with experienced linguists for cost-efficient, scalable localization of software, apps, games and e-commerce. Localization studio since 2015.">
-<link rel="canonical" href="https://comoloc.co/">
+<title>Blog | Comoloc</title>
+<meta name="description" content="Practical notes on localization, AI translation workflows, MQM quality evaluation and game localization from the Comoloc team.">
+<link rel="canonical" href="https://comoloc.co/blog.html">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Comoloc">
-<meta property="og:title" content="Comoloc | AI-Powered Localization for Software, Games &amp; E-commerce">
-<meta property="og:description" content="Comoloc combines AI with experienced linguists for cost-efficient, scalable localization of software, apps, games and e-commerce. Localization studio since 2015.">
-<meta property="og:url" content="https://comoloc.co/">
+<meta property="og:title" content="Blog | Comoloc">
+<meta property="og:description" content="Practical notes on localization, AI translation workflows, MQM quality evaluation and game localization from the Comoloc team.">
+<meta property="og:url" content="https://comoloc.co/blog.html">
 <meta property="og:image" content="https://comoloc.co/assets/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -21,163 +21,42 @@
 <link rel="alternate" type="application/rss+xml" title="Comoloc Blog" href="https://comoloc.co/blog/feed.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <style>:root{--bg:#0B0D12; --surface:#12161E; --surface-2:#171C26; --ink:#ECEEF3; --ink-2:#8E96A8; --line:#232A36;--accent:#C8F169; --accent-2:#9C8CFF; --max:1180px;}*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:"Space Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}.mono{font-family:"JetBrains Mono",ui-monospace,Consolas,monospace}h1,h2,h3{line-height:1.08;letter-spacing:-.03em;font-weight:700}a{color:inherit}.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}section{padding:104px 0;border-top:1px solid var(--line)}.kicker{font-family:"JetBrains Mono",monospace;font-size:13px;color:var(--accent);margin-bottom:18px}.kicker::before{content:"// "}h2{font-size:clamp(32px,4.5vw,52px);max-width:760px;margin-bottom:16px}.lead{color:var(--ink-2);font-size:18px;max-width:640px}.skip{position:absolute;left:-9999px}.skip:focus{left:16px;top:12px;z-index:99;background:var(--accent);color:#0B0D12;padding:8px 12px;border-radius:6px}/* header */header{position:sticky;top:0;z-index:10;background:rgba(11,13,18,.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.nav{display:flex;justify-content:space-between;align-items:center;height:66px}.logo{font-family:"JetBrains Mono",monospace;font-weight:600;font-size:19px;text-decoration:none}.logo b{color:var(--accent)}.cursor{display:inline-block;width:9px;height:18px;background:var(--accent);vertical-align:-3px;margin-left:2px;animation:blink 1.1s steps(1) infinite}@keyframes blink{50%{opacity:0}}@media (prefers-reduced-motion:reduce){.cursor{animation:none}html{scroll-behavior:auto}}.nav ul{display:flex;gap:30px;list-style:none;font-size:15px}.nav ul a{text-decoration:none;color:var(--ink-2)}.nav ul a:hover,.nav ul a[aria-current]{color:var(--ink)}.btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#0B0D12;font-weight:700;font-size:15px;text-decoration:none;padding:12px 20px;border-radius:8px;transition:transform .15s,box-shadow .15s}.btn:hover{transform:translateY(-1px);box-shadow:0 8px 28px -8px rgba(200,241,105,.55)}.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}.btn.ghost:hover{border-color:var(--ink-2);box-shadow:none}.cta{display:flex;gap:12px;flex-wrap:wrap}/* hero */.hero{border-top:0;padding:96px 0 104px;position:relative;overflow:hidden}.hero::before{content:"";position:absolute;inset:-40% -10% auto auto;width:720px;height:720px;background:radial-gradient(closest-side,rgba(156,140,255,.18),transparent);pointer-events:none}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;position:relative}.badge{display:inline-flex;gap:10px;align-items:center;font-family:"JetBrains Mono",monospace;font-size:13px;color:var(--ink-2);border:1px solid var(--line);border-radius:999px;padding:6px 14px;margin-bottom:26px}.dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(200,241,105,.15)}.hero h1{font-size:clamp(44px,6.6vw,80px);margin-bottom:24px}.hero h1 span{color:var(--accent)}.hero p{color:var(--ink-2);font-size:19px;max-width:540px;margin-bottom:34px}.code{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;font-family:"JetBrains Mono",monospace;font-size:13.5px}.tabs{display:flex;border-bottom:1px solid var(--line);background:var(--surface-2)}.tabs span{padding:10px 16px;color:var(--ink-2);border-right:1px solid var(--line)}.tabs span.on{color:var(--ink);background:var(--surface)}.code pre{padding:18px 20px;line-height:1.85;overflow-x:auto;white-space:pre}.k{color:var(--accent-2)} .s{color:var(--accent)} .c{color:#5B6478} .del{color:#FF8A8A;text-decoration:line-through;text-decoration-color:rgba(255,138,138,.5)}.stats{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:14px;margin-top:72px;position:relative;background:var(--surface)}.stats div{padding:26px 24px}.stats div+div{border-left:1px solid var(--line)}.stats b{display:block;font-size:32px;letter-spacing:-.03em}.stats span{font-family:"JetBrains Mono",monospace;font-size:12.5px;color:var(--ink-2)}/* AI */.ai-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:56px}.ai-card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:26px;position:relative;overflow:hidden}.ai-card::after{content:"";position:absolute;left:0;top:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),var(--accent-2))}.ai-card .mono{font-size:12px;color:var(--accent-2);display:block;margin-bottom:22px}.ai-card h3{font-size:20px;letter-spacing:-.01em;margin-bottom:8px}.ai-card p{color:var(--ink-2);font-size:15px}.benefits{display:grid;grid-template-columns:repeat(3,1fr);margin-top:16px;border:1px solid var(--line);border-radius:14px}.benefits div{padding:24px 26px}.benefits div+div{border-left:1px solid var(--line)}.benefits h3{font-size:17px;letter-spacing:-.01em;margin-bottom:6px;color:var(--accent)}.benefits p{color:var(--ink-2);font-size:15px}/* services */.svc{display:grid;grid-template-columns:repeat(2,1fr);margin-top:56px;border-top:1px solid var(--line)}.svc>div{display:grid;grid-template-columns:56px 1fr;padding:26px 24px 26px 0;border-bottom:1px solid var(--line);transition:background .15s}.svc>div:nth-child(odd){padding-right:40px;border-right:1px solid var(--line)}.svc>div:nth-child(even){padding-left:32px}.svc>div:hover{background:var(--surface)}.svc .n{font-family:"JetBrains Mono",monospace;font-size:13px;color:var(--accent);padding-top:5px}.svc h3{font-size:20px;letter-spacing:-.01em;margin-bottom:6px}.svc p{color:var(--ink-2);font-size:15px}.note{display:flex;gap:12px;align-items:center;margin-top:28px;font-family:"JetBrains Mono",monospace;font-size:13.5px;color:var(--ink-2)}.note b{color:var(--ink);font-weight:600}/* industries */.ind{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:48px}.ind div{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:26px}.ind .mono{font-size:12px;color:var(--accent-2);margin-bottom:28px;display:block}.ind h3{font-size:24px;margin-bottom:8px}.ind p{color:var(--ink-2);font-size:15px}/* process */.pipe{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:56px;position:relative}.pipe::before{content:"";position:absolute;left:0;right:0;top:15px;height:1px;background:linear-gradient(90deg,var(--accent),var(--accent-2))}.pipe>div{padding-right:24px;position:relative}.pipe .node{width:31px;height:31px;border-radius:50%;background:var(--bg);border:1px solid var(--accent);display:grid;place-items:center;font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--accent);margin-bottom:22px}.pipe h3{font-size:20px;margin-bottom:8px}.pipe p{color:var(--ink-2);font-size:15px}/* about */.about{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}.about p{color:var(--ink-2);margin-top:16px}.about p.hl{color:var(--ink);border-left:2px solid var(--accent);padding-left:16px}.term{background:var(--surface);border:1px solid var(--line);border-radius:14px;font-family:"JetBrains Mono",monospace;font-size:14px;overflow:hidden}.term .top{display:flex;gap:7px;padding:12px 16px;border-bottom:1px solid var(--line)}.term .top i{width:11px;height:11px;border-radius:50%;background:#2A3240}.term pre{padding:20px;line-height:1.9;white-space:pre-wrap}/* blog cards */.posts{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px}.post-card{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:26px;text-decoration:none;transition:border-color .15s,transform .15s}.post-card:hover{border-color:#3A4456;transform:translateY(-2px)}.post-card .meta{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--ink-2);margin-bottom:18px}.post-card h3{font-size:22px;letter-spacing:-.02em;margin-bottom:10px}.post-card p{color:var(--ink-2);font-size:15px;flex:1}.post-card .more{margin-top:20px;font-size:14px;color:var(--accent);font-weight:500}.all{display:inline-block;margin-top:28px;color:var(--accent);text-decoration:none;font-weight:500}.all:hover{text-decoration:underline}/* contact */.contact{text-align:center;padding:120px 0}.contact h2{margin:0 auto 18px;font-size:clamp(38px,6vw,72px)}.contact h2 span{color:var(--accent)}.contact .lead{margin:0 auto 36px}.contact .cta{justify-content:center}footer{border-top:1px solid var(--line);padding:26px 0;font-size:14px;color:var(--ink-2)}footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}footer a{text-decoration:none}footer a:hover{color:var(--ink)}/* blog pages */.page-head{border-top:0;padding:80px 0 40px}.page-head h1{font-size:clamp(40px,6vw,68px);margin-bottom:16px}.list{border-top:0;padding:24px 0 104px}.list .posts{grid-template-columns:1fr;margin-top:0;max-width:820px}.list .post-card{padding:30px}.crumbs{font-family:"JetBrains Mono",monospace;font-size:13px;color:var(--ink-2);margin-bottom:28px}.crumbs a{text-decoration:none}.crumbs a:hover{color:var(--ink)}.article-head{border-top:0;padding:72px 0 40px}.article-head .wrap,.article .wrap{max-width:800px}.article-head h1{font-size:clamp(34px,5vw,56px);margin-bottom:20px}.article-head .dek{font-size:20px;color:var(--ink-2)}.byline{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:24px;font-family:"JetBrains Mono",monospace;font-size:13px;color:var(--ink-2)}.article{border-top:0;padding:8px 0 96px}.takeaways{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:12px;padding:24px 28px;margin-bottom:48px}.takeaways h2{font-size:15px;font-family:"JetBrains Mono",monospace;font-weight:600;letter-spacing:0;color:var(--accent);margin-bottom:12px}.takeaways ul{padding-left:20px}.takeaways li{margin:6px 0;color:var(--ink)}.prose{font-size:18px;line-height:1.75;color:#D5D9E2}.prose h2{font-size:clamp(26px,3.2vw,34px);margin:56px 0 16px;color:var(--ink)}.prose h3{font-size:22px;margin:36px 0 10px;color:var(--ink);letter-spacing:-.02em}.prose p{margin:0 0 20px}.prose ul,.prose ol{margin:0 0 24px;padding-left:24px}.prose li{margin:8px 0}.prose li::marker{color:var(--accent)}.prose strong{color:var(--ink)}.prose code{font-family:"JetBrains Mono",monospace;font-size:.86em;background:var(--surface-2);border:1px solid var(--line);border-radius:5px;padding:1px 6px;color:var(--accent)}.prose a{color:var(--accent)}.prose table{width:100%;border-collapse:collapse;margin:8px 0 28px;font-size:16px}.prose th,.prose td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}.prose th{font-family:"JetBrains Mono",monospace;font-size:13px;font-weight:600;color:var(--ink-2);background:var(--surface)}.table-wrap{overflow-x:auto}.post-cta{margin-top:64px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:32px}.post-cta h2{font-size:26px;margin:0 0 10px}.post-cta p{color:var(--ink-2);margin-bottom:20px}.more-posts{margin-top:56px}.more-posts h2{font-size:22px;margin-bottom:16px}.more-posts .posts{grid-template-columns:1fr 1fr;margin-top:0}.notfound{border-top:0;padding:140px 0;text-align:center}.notfound h1{font-size:clamp(48px,8vw,96px);margin-bottom:12px}.notfound p{color:var(--ink-2);margin-bottom:32px}.notfound .cta{justify-content:center}@media (max-width:960px){section{padding:80px 0}.hero{padding:64px 0 80px}.nav ul{display:none}.hero-grid,.about{grid-template-columns:1fr;gap:40px}.stats{grid-template-columns:1fr 1fr}.stats div:nth-child(3){border-left:0}.stats div:nth-child(n+3){border-top:1px solid var(--line)}.ai-grid{grid-template-columns:1fr 1fr}.benefits{grid-template-columns:1fr}.benefits div+div{border-left:0;border-top:1px solid var(--line)}.svc{grid-template-columns:1fr}.svc>div:nth-child(odd),.svc>div:nth-child(even){padding:24px 0;border-right:0}.ind{grid-template-columns:1fr 1fr}.pipe{grid-template-columns:1fr;gap:28px}.pipe::before{left:15px;right:auto;top:0;bottom:0;width:1px;height:auto;background:linear-gradient(180deg,var(--accent),var(--accent-2))}.pipe>div{display:grid;grid-template-columns:52px 1fr;padding:0}.pipe .node{margin:0}.posts{grid-template-columns:1fr}.more-posts .posts{grid-template-columns:1fr}.page-head,.article-head{padding-top:56px}}@media (max-width:560px){body{font-size:16px}.wrap{padding:0 16px}.ind,.ai-grid{grid-template-columns:1fr}.code{font-size:12px}.code pre{padding:14px}.stats b{font-size:26px}.stats div{padding:20px 16px}.prose{font-size:17px}.takeaways{padding:20px}}</style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://comoloc.co/#org", "name": "Comoloc", "url": "https://comoloc.co/", "logo": "https://comoloc.co/assets/logo.png", "image": "https://comoloc.co/assets/og-image.png", "email": "contact@comoloc.co", "foundingDate": "2015", "description": "Comoloc is a localization studio founded in 2015 that combines AI with experienced linguists to deliver cost-efficient, scalable localization for technology, software, e-commerce and gaming companies.", "sameAs": ["https://www.linkedin.com/company/comoloc"], "numberOfEmployees": {"@type": "QuantitativeValue", "minValue": 5}, "knowsLanguage": ["en", "tr"], "knowsAbout": ["Localization", "Translation", "Game localization", "Software localization", "AI translation", "Machine translation post-editing", "MQM", "Linguistic quality assurance", "Terminology management", "Transcreation", "Subtitling"], "contactPoint": {"@type": "ContactPoint", "contactType": "sales", "email": "contact@comoloc.co", "availableLanguage": ["English", "Turkish"]}, "makesOffer": [{"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Translation", "description": "Accurate, natural translation for product, marketing and support content."}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Software, App & Web Localization", "description": "UI strings, help centers and websites adapted for each market, with placeholders, plurals and length limits handled."}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Game Localization", "description": "In-game text, UI, store pages and patch notes that keep tone, humor and character voice intact."}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "LQA & MQM Evaluation", "description": "Structured quality reviews using the MQM error typology, with scorecards your team can act on."}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Machine Translation Post-Editing", "description": "Light or full post-editing of machine and AI output, matched to your quality bar, timeline and budget."}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Transcreation", "description": "Slogans, campaigns and app store copy recreated for local audiences, not translated word for word."}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Subtitling", "description": "Timed, readable subtitles for product videos, trailers and tutorials."}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Terminology Management", "description": "Glossaries and termbases that keep your product language consistent across every release."}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Localization Process Design", "description": "Workflows, tooling, AI integration and QA steps set up so localization scales with your product."}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Crowdsourcing Management", "description": "Recruiting, guiding and quality-checking community translators for large or community-driven projects."}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "AI Translation with Human Review", "description": "LLMs and machine translation produce a fast first draft. Our linguists edit, adapt and sign off on every string."}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "AI-Assisted Quality Checks", "description": "Automated checks flag errors, terminology drift and inconsistencies, and pre-score content with MQM before human LQA."}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "AI Workflow Setup", "description": "Custom prompts, glossary and style guide integration, engine selection and automation, built around your content and tools."}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "AI Terminology & Style Guides", "description": "We extract key terms from your existing content and draft style guides that keep both AI and linguists on-brand."}}]}, {"@type": "WebSite", "@id": "https://comoloc.co/#website", "url": "https://comoloc.co/", "name": "Comoloc", "publisher": {"@id": "https://comoloc.co/#org"}, "inLanguage": "en"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Blog", "@id": "https://comoloc.co/blog.html#blog", "name": "Comoloc Blog", "url": "https://comoloc.co/blog.html", "description": "Practical notes on localization, AI and translation quality.", "publisher": {"@id": "https://comoloc.co/#org"}, "blogPost": [{"@type": "BlogPosting", "headline": "AI + Human Localization: How to Get Speed Without Losing Quality", "url": "https://comoloc.co/blog/ai-human-localization.html", "datePublished": "2026-10-04"}, {"@type": "BlogPosting", "headline": "MQM Explained: How to Measure Translation Quality Objectively", "url": "https://comoloc.co/blog/mqm-translation-quality.html", "datePublished": "2026-10-04"}, {"@type": "BlogPosting", "headline": "Localizing Games into Turkish: 7 Pitfalls to Avoid", "url": "https://comoloc.co/blog/game-localization-turkish.html", "datePublished": "2026-10-04"}]}, {"@type": "Organization", "@id": "https://comoloc.co/#org", "name": "Comoloc", "url": "https://comoloc.co/", "logo": "https://comoloc.co/assets/logo.png", "image": "https://comoloc.co/assets/og-image.png", "email": "contact@comoloc.co", "foundingDate": "2015", "description": "Comoloc is a localization studio founded in 2015 that combines AI with experienced linguists to deliver cost-efficient, scalable localization for technology, software, e-commerce and gaming companies.", "sameAs": ["https://www.linkedin.com/company/comoloc"], "numberOfEmployees": {"@type": "QuantitativeValue", "minValue": 5}, "knowsLanguage": ["en", "tr"], "knowsAbout": ["Localization", "Translation", "Game localization", "Software localization", "AI translation", "Machine translation post-editing", "MQM", "Linguistic quality assurance", "Terminology management", "Transcreation", "Subtitling"], "contactPoint": {"@type": "ContactPoint", "contactType": "sales", "email": "contact@comoloc.co", "availableLanguage": ["English", "Turkish"]}}]}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header>
   <div class="wrap nav">
     <a href="index.html" class="logo" aria-label="Comoloc home">como<b>loc</b><span class="cursor"></span></a>
-    <nav aria-label="Main"><ul><li><a href="#services">Services</a></li><li><a href="#ai">AI</a></li><li><a href="#process">Process</a></li><li><a href="#about">About</a></li><li><a href="blog.html">Blog</a></li></ul></nav>
+    <nav aria-label="Main"><ul><li><a href="#services">Services</a></li><li><a href="#ai">AI</a></li><li><a href="#process">Process</a></li><li><a href="#about">About</a></li><li><a href="blog.html" aria-current="page">Blog</a></li></ul></nav>
     <a href="mailto:contact@comoloc.co?subject=Project%20inquiry" class="btn">Get a quote</a>
   </div>
 </header>
 
 <main id="main">
-<section class="hero">
-  <div class="wrap">
-    <div class="hero-grid">
-      <div>
-        <div class="badge"><span class="dot"></span>Localization studio since 2015</div>
-        <h1>Ship globally.<br><span>Sound local.</span></h1>
-        <p>Comoloc combines AI with experienced linguists to localize software, apps, games and e-commerce content. You get native-quality results at a cost and speed that scale with your releases.</p>
-        <div class="cta">
-          <a href="mailto:contact@comoloc.co?subject=Project%20inquiry" class="btn">Email us →</a>
-          <a href="#ai" class="btn ghost">Our AI approach</a>
-        </div>
-      </div>
-      <div class="code" aria-label="Example of localized strings">
-        <div class="tabs"><span>en.json</span><span class="on">tr.json</span></div>
-<pre>{
-  <span class="k">"cart.add"</span>: <span class="s">"Sepete ekle"</span>,
-  <span class="k">"game.levelUp"</span>: <span class="s">"Seviye atladın!"</span>,
-  <span class="k">"order.shipped"</span>: <span class="s">"Siparişiniz kargoya verildi."</span>,
-  <span class="c">// no plural suffix after numbers</span>
-  <span class="k">"files.count"</span>: <span class="s">"{n} dosya"</span>,
-  <span class="c">// style guide: short, informal CTA</span>
-  <span class="k">"cta.buy"</span>: <span class="del">"Satın alın"</span> <span class="s">"Hemen al"</span>
-}</pre>
-      </div>
-    </div>
-    <div class="stats">
-      <div><b>2015</b><span>founded</span></div>
-      <div><b>10+</b><span>years experience</span></div>
-      <div><b>5+</b><span>specialists</span></div>
-      <div><b>AI + human</b><span>workflow</span></div>
-    </div>
-  </div>
-</section>
-
-<section id="ai">
-  <div class="wrap">
-    <div class="kicker">ai-powered localization</div>
-    <h2>AI in the loop. Linguists in charge.</h2>
-    <p class="lead">We build AI into every stage of the localization process where it adds value, and keep experienced linguists responsible for the final result. The outcome is cost-efficient, scalable localization that still reads like it was written for your market.</p>
-    <div class="ai-grid"><article class="ai-card"><span class="mono">draft + review</span><h3>AI Translation with Human Review</h3><p>LLMs and machine translation produce a fast first draft. Our linguists edit, adapt and sign off on every string.</p></article><article class="ai-card"><span class="mono">automated qa</span><h3>AI-Assisted Quality Checks</h3><p>Automated checks flag errors, terminology drift and inconsistencies, and pre-score content with MQM before human LQA.</p></article><article class="ai-card"><span class="mono">workflow setup</span><h3>AI Workflow Setup</h3><p>Custom prompts, glossary and style guide integration, engine selection and automation, built around your content and tools.</p></article><article class="ai-card"><span class="mono">terms + style</span><h3>AI Terminology &amp; Style Guides</h3><p>We extract key terms from your existing content and draft style guides that keep both AI and linguists on-brand.</p></article></div>
-    <div class="benefits">
-      <div><h3>Lower cost</h3><p>AI handles repetitive drafting and checks, so you pay for expertise where it matters.</p></div>
-      <div><h3>Faster turnaround</h3><p>Shorter cycles help localization keep pace with your release schedule.</p></div>
-      <div><h3>Built to scale</h3><p>From a single app update to large, continuous content streams, the workflow grows with you.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="services">
-  <div class="wrap">
-    <div class="kicker">services</div>
-    <h2>From strings to full localization programs.</h2>
-    <p class="lead">Language work, quality measurement and the operations around them, for every market you launch in.</p>
-    <div class="svc"><div><span class="n">01</span><div><h3>Translation</h3><p>Accurate, natural translation for product, marketing and support content.</p></div></div><div><span class="n">02</span><div><h3>Software, App &amp; Web Localization</h3><p>UI strings, help centers and websites adapted for each market, with placeholders, plurals and length limits handled.</p></div></div><div><span class="n">03</span><div><h3>Game Localization</h3><p>In-game text, UI, store pages and patch notes that keep tone, humor and character voice intact.</p></div></div><div><span class="n">04</span><div><h3>LQA &amp; MQM Evaluation</h3><p>Structured quality reviews using the MQM error typology, with scorecards your team can act on.</p></div></div><div><span class="n">05</span><div><h3>Machine Translation Post-Editing</h3><p>Light or full post-editing of machine and AI output, matched to your quality bar, timeline and budget.</p></div></div><div><span class="n">06</span><div><h3>Transcreation</h3><p>Slogans, campaigns and app store copy recreated for local audiences, not translated word for word.</p></div></div><div><span class="n">07</span><div><h3>Subtitling</h3><p>Timed, readable subtitles for product videos, trailers and tutorials.</p></div></div><div><span class="n">08</span><div><h3>Terminology Management</h3><p>Glossaries and termbases that keep your product language consistent across every release.</p></div></div><div><span class="n">09</span><div><h3>Localization Process Design</h3><p>Workflows, tooling, AI integration and QA steps set up so localization scales with your product.</p></div></div><div><span class="n">10</span><div><h3>Crowdsourcing Management</h3><p>Recruiting, guiding and quality-checking community translators for large or community-driven projects.</p></div></div></div>
-    <p class="note"><span class="dot"></span><span>Current target language: <b>Turkish</b>. More target languages are on the way.</span></p>
-  </div>
-</section>
-
-<section id="industries">
-  <div class="wrap">
-    <div class="kicker">industries</div>
-    <h2>Where we already speak your language.</h2>
-    <div class="ind">
-      <div><span class="mono">tech/</span><h3>Technology</h3><p>Platforms, devices and developer-facing content.</p></div>
-      <div><span class="mono">software/</span><h3>Software</h3><p>SaaS products, desktop apps, documentation and release notes.</p></div>
-      <div><span class="mono">ecommerce/</span><h3>E-commerce</h3><p>Product listings, checkout flows, notifications and campaigns.</p></div>
-      <div><span class="mono">gaming/</span><h3>Gaming</h3><p>Mobile, PC and console games, from UI to dialogue.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="process">
-  <div class="wrap">
-    <div class="kicker">process</div>
-    <h2>A pipeline you can plan around.</h2>
-    <p class="lead">A clear, repeatable workflow so you always know where your project stands.</p>
-    <div class="pipe">
-      <div><span class="node">1</span><div><h3>Brief</h3><p>Tell us about your content, volume, deadline and tools. We reply with a clear quote.</p></div></div>
-      <div><span class="node">2</span><div><h3>Setup</h3><p>We prepare your glossary, style guide and translation memory, and configure the AI workflow around them.</p></div></div>
-      <div><span class="node">3</span><div><h3>Localize</h3><p>AI produces a first draft where it fits. Our linguists translate, edit and adapt in context.</p></div></div>
-      <div><span class="node">4</span><div><h3>Review</h3><p>A second linguist reviews the work, and AI-assisted checks catch inconsistencies before release.</p></div></div>
-      <div><span class="node">5</span><div><h3>Deliver</h3><p>Files arrive in their original format, with open questions resolved.</p></div></div>
-    </div>
-  </div>
-</section>
-
-<section id="about">
-  <div class="wrap about">
-    <div>
-      <div class="kicker">about</div>
-      <h2>A decade of craft. Built for scale.</h2>
-      <p>Comoloc is a localization studio founded in 2015. Our team of 5+ linguists and localization specialists has spent more than a decade helping technology, software, e-commerce and gaming companies reach new markets.</p>
-      <p>Today we pair that experience with AI-powered workflows, so clients get native-quality content at a cost and pace that scale with their product.</p>
-      <p class="hl">We currently localize from English into Turkish, and we are expanding to more target languages.</p>
-    </div>
-    <div class="term" aria-label="Company facts">
-      <div class="top"><i></i><i></i><i></i></div>
-<pre><span class="c">$</span> comoloc --info
-<span class="k">name</span>       Comoloc
-<span class="k">founded</span>    2015
-<span class="k">team</span>       5+ specialists
-<span class="k">approach</span>   <span class="s">ai + human-in-the-loop</span>
-<span class="k">targets</span>    tr <span class="c">(more coming)</span>
-<span class="k">focus</span>      tech · software · e-commerce · gaming
-<span class="k">contact</span>    <span class="s">contact@comoloc.co</span></pre>
-    </div>
-  </div>
-</section>
-
-<section id="blog">
+<section class="page-head">
   <div class="wrap">
     <div class="kicker">blog</div>
-    <h2>Notes on localization and AI.</h2>
-    <div class="posts"><a class="post-card" href="blog/ai-human-localization.html">
+    <h1>Notes on localization and AI.</h1>
+    <p class="lead">Practical articles on AI-powered localization, translation quality and shipping products in new markets.</p>
+  </div>
+</section>
+<section class="list"><div class="wrap"><div class="posts"><a class="post-card" href="blog/ai-human-localization.html">
   <span class="meta">October 4, 2026 · 3 min read</span>
-  <h3>AI + Human Localization: How to Get Speed Without Losing Quality</h3>
+  <h2>AI + Human Localization: How to Get Speed Without Losing Quality</h2>
   <p>Where AI helps, where linguists still matter, and a practical workflow for cost-efficient localization at scale.</p>
   <span class="more">Read article →</span>
 </a><a class="post-card" href="blog/mqm-translation-quality.html">
   <span class="meta">October 4, 2026 · 3 min read</span>
-  <h3>MQM Explained: How to Measure Translation Quality Objectively</h3>
+  <h2>MQM Explained: How to Measure Translation Quality Objectively</h2>
   <p>Error categories, severity levels and a simple scoring method you can use to evaluate human, MT and AI translation.</p>
   <span class="more">Read article →</span>
 </a><a class="post-card" href="blog/game-localization-turkish.html">
   <span class="meta">October 4, 2026 · 3 min read</span>
-  <h3>Localizing Games into Turkish: 7 Pitfalls to Avoid</h3>
+  <h2>Localizing Games into Turkish: 7 Pitfalls to Avoid</h2>
   <p>Suffixes and variables, the dotted and dotless i, fonts, UI space, plurals and tone: what to plan for before you localize.</p>
   <span class="more">Read article →</span>
-</a></div>
-    <a class="all" href="blog.html">All posts →</a>
-  </div>
-</section>
-
-<section id="contact" class="contact">
-  <div class="wrap">
-    <div class="kicker">contact</div>
-    <h2>Let's localize your <span>next release.</span></h2>
-    <p class="lead">Tell us your content type, approximate word count, target market and deadline. We'll get back to you with a quote.</p>
-    <div class="cta">
-      <a href="mailto:contact@comoloc.co?subject=Project%20inquiry" class="btn">contact@comoloc.co</a>
-      <a href="https://www.linkedin.com/company/comoloc" target="_blank" rel="noopener" class="btn ghost">LinkedIn ↗</a>
-    </div>
-  </div>
-</section>
+</a></div></div></section>
 </main>
 <footer>
   <div class="wrap">

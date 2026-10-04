@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>Comoloc Blog</title>
+  <link>https://comoloc.co/blog.html</link>
+  <description>Practical notes on localization, AI and translation quality.</description>
+  <language>en</language>
+  <item>
+    <title>AI + Human Localization: How to Get Speed Without Losing Quality</title>
+    <link>https://comoloc.co/blog/ai-human-localization.html</link>
+    <guid>https://comoloc.co/blog/ai-human-localization.html</guid>
+    <pubDate>Sun, 04 Oct 2026 09:00:00 +0300</pubDate>
+    <description>How to combine AI translation with expert linguists for faster, more cost-efficient localization without sacrificing quality. A practical, step-by-step workflow.</description>
+  </item>
+  <item>
+    <title>MQM Explained: How to Measure Translation Quality Objectively</title>
+    <link>https://comoloc.co/blog/mqm-translation-quality.html</link>
+    <guid>https://comoloc.co/blog/mqm-translation-quality.html</guid>
+    <pubDate>Sun, 04 Oct 2026 09:00:00 +0300</pubDate>
+    <description>A practical introduction to MQM (Multidimensional Quality Metrics): error categories, severity levels, scoring and how to use it to evaluate human, machine and AI translation.</description>
+  </item>
+  <item>
+    <title>Localizing Games into Turkish: 7 Pitfalls to Avoid</title>
+    <link>https://comoloc.co/blog/game-localization-turkish.html</link>
+    <guid>https://comoloc.co/blog/game-localization-turkish.html</guid>
+    <pubDate>Sun, 04 Oct 2026 09:00:00 +0300</pubDate>
+    <description>Seven common pitfalls when localizing games into Turkish, from suffixes and string variables to the Turkish I problem, fonts, UI space, plurals, number formats and tone.</description>
+  </item>
+</channel>
+</rss>

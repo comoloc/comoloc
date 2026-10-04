@@ -1,0 +1,5 @@
+# Comoloc - all search engines and AI assistants are welcome to crawl this site.
+User-agent: *
+Allow: /
+
+Sitemap: https://comoloc.co/sitemap.xml
